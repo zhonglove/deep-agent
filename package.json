@@ -1,0 +1,36 @@
+{
+  "name": "deep-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "基于大模型（deepseek、chatgpt）实现通用型AI智能体",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "dev": "npm run build && node dist/index.mjs",
+    "demo:basic": "npm run build && node dist/demo-basic.mjs",
+    "demo:search": "npm run build && node dist/demo-search.mjs",
+    "demo:multi": "npm run build && node dist/demo-multi-agent.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhonglove/deep-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhonglove/deep-agent/issues"
+  },
+  "homepage": "https://github.com/zhonglove/deep-agent#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "fs-extra": "^11.4.0",
+    "openai": "^7.5.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^26.2.0",
+    "tsup": "^8.5.1",
+    "typescript": "^7.0.2"
+  }
+}
